@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>591 Reskin</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>591 Reskin</h1>
+      <p class="subtitle">UI Modification Extension</p>
+    </header>
+
+    <main class="popup-content">
+      <div class="setting-group">
+        <label class="toggle-setting">
+          <span class="setting-label">Enable Extension</span>
+          <input type="checkbox" id="enableExtension" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-group">
+        <label class="toggle-setting">
+          <span class="setting-label">Hide Advertisements</span>
+          <input type="checkbox" id="hideAds" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-group">
+        <label class="toggle-setting">
+          <span class="setting-label">Enhance Layout</span>
+          <input type="checkbox" id="enhanceLayout" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="setting-group">
+        <label class="toggle-setting">
+          <span class="setting-label">Custom Styles</span>
+          <input type="checkbox" id="customStyles" checked>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="status-indicator" id="statusIndicator">
+        <span class="status-dot"></span>
+        <span class="status-text">Active</span>
+      </div>
+    </main>
+
+    <footer class="popup-footer">
+      <button id="refreshBtn" class="btn btn-secondary">Refresh Page</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

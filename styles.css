@@ -1,0 +1,93 @@
+/**
+ * 591 Reskin - Content Styles
+ * These styles are injected into the target website
+ */
+
+/* Base styles when extension is active */
+.reskin-active {
+  /* Smooth font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide common ad containers */
+.reskin-active .ad-container,
+.reskin-active .advertisement,
+.reskin-active .banner-ad,
+.reskin-active [class*="google-ad"],
+.reskin-active .sponsored-content {
+  display: none !important;
+}
+
+/* Improve card-like elements */
+.reskin-active .card,
+.reskin-active .listing-item,
+.reskin-active .property-item {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reskin-active .card:hover,
+.reskin-active .listing-item:hover,
+.reskin-active .property-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Improve buttons */
+.reskin-active button,
+.reskin-active .btn,
+.reskin-active [class*="button"] {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Improve form inputs */
+.reskin-active input[type="text"],
+.reskin-active input[type="search"],
+.reskin-active input[type="email"],
+.reskin-active input[type="tel"],
+.reskin-active select,
+.reskin-active textarea {
+  border-radius: 6px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reskin-active input:focus,
+.reskin-active select:focus,
+.reskin-active textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Improve images */
+.reskin-active img {
+  border-radius: 4px;
+}
+
+/* Improve links */
+.reskin-active a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Scrollbar improvements */
+.reskin-active ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.reskin-active ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.reskin-active ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.reskin-active ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
